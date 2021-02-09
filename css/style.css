@@ -1,0 +1,70 @@
+/* .gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat();
+    max-width: 960px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    grid-gap: 32px;
+    grid-template-areas: "uxuiskills frontEnd" "tools";
+} */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 32px;
+    width: 960px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 1rem;
+}
+
+.gridbox {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+.gridbox h2 {
+    margin-left: 38px;
+}
+
+
+/* #uxuiskills {
+    grid-area: uxuiskills;
+}
+
+#fronEnd {
+    grid-area: frontEnd;
+}
+
+#tools {
+    grid-area: tools;
+} */
+
+
+/* @media only screen and (max-width:600px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        max-width: 80%;
+        grid-template-areas: "uxuiskills" "frontEnd" "tools";
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        width: 960px;
+        margin-top: 0;
+        margin-left: 13%;
+        margin-right: 13%;
+        grid-gap: 32px;
+        grid-template-areas: "uxuiskills frontEnd" "tools";
+    }
+} */

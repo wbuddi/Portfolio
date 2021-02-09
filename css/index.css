@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    background-color: #f6f5f5;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 96px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #505050;
+    font-size: 1.75rem;
+    font-weight: 700;
+    width: 960px;
+}
+
+.align,
+nav,
+main,
+.footer-items {
+    max-width: 960px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav * {
+    flex-grow: 1;
+}
+
+.link {
+    color: #454545;
+    opacity: 0.5;
+}
+
+.flex {
+    display: flex;
+}
+
+.middle {
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    font-size: 2.5rem;
+}
+
+.active {
+    color: #2d2a2a;
+    font-weight: bold;
+}
+
+.down-resume {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 60px;
+    border-radius: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    margin: 0px;
+    padding: 4px 4px;
+    background-color: #0B0B0B;
+    color: #fff;
+    cursor: pointer;
+    /* border: none; */
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+.case-study {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    height: 420px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.image-container {
+    grid-column: span 8;
+    width: 640px;
+    height: 480px;
+    position: relative;
+}
+
+.case-study-image {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.details * {
+    margin: 2rem 0;
+}
+
+.details {
+    grid-column: span 4;
+}
+
+.tt h2 {
+    transform: translate(-20%);
+    font-size: 2rem;
+}
+
+.case-study p {
+    font-size: 1.5rem;
+}
+
+.gm h2 {
+    transform: translate(40%);
+    font-size: 2rem;
+}
+
+.gm {
+    position: relative;
+}
+
+.gm .image-container {
+    z-index: -5;
+    background-color: #B2C8B2;
+}
+
+.tt .image-container {
+    background-color: #BCBAE3;
+}
+
+footer {
+    display: flex;
+    height: 96px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer * {
+    flex-grow: 1;
+}
+
+.footer-items {
+    justify-content: center;
+    align-items: center;
+}
