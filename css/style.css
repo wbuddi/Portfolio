@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+a {
+    text-decoration: none;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;

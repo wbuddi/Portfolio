@@ -1,9 +1,16 @@
 console.log("Your index.js is loaded correctly!");
 
 $(document).ready(function() {
-    $(".link").hover(function() {
-        $(this).css("opacity", "1")
-    }, function() {
-        $(this).css("opacity", "0.5")
-    })
-})
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 40) {
+            $('#back-to-top').fadeIn();
+        } else {
+            $('#back-to-top').fadeOut();
+        }
+    });
+
+    $("#back-to-top").click(function() {
+        $('html ,body').animate({ scrollTop: 0 }, 800);
+    });
+});
