@@ -1,15 +1,4 @@
-/* .gridContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-columns: repeat();
-    max-width: 960px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    grid-gap: 32px;
-    grid-template-areas: "uxuiskills frontEnd" "tools";
-} */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 .gridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -19,6 +8,7 @@
     margin-top: 4rem;
     margin-bottom: 4rem;
     padding: 1rem;
+    color: #1d1d1d;
 }
 
 .gridbox {
@@ -32,30 +22,20 @@
     margin-left: 38px;
 }
 
-
-/* #uxuiskills {
-    grid-area: uxuiskills;
-}
-
-#fronEnd {
-    grid-area: frontEnd;
-}
-
-#tools {
-    grid-area: tools;
-} */
-
-
-/* @media only screen and (max-width:600px) {
+@media only screen and (max-width:800px) {
     .gridContainer {
         grid-template-columns: 1fr;
-        grid-template-rows: 300px;
+        grid-template-rows: auto;
         max-width: 80%;
+        margin-left: 13%;
         grid-template-areas: "uxuiskills" "frontEnd" "tools";
+    }
+    .gridbox {
+        height: auto;
     }
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:800px) {
     .gridContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -67,4 +47,4 @@
         grid-gap: 32px;
         grid-template-areas: "uxuiskills frontEnd" "tools";
     }
-} */
+}
